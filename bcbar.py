@@ -42,7 +42,7 @@ while(1):
 
 
     serial = spi(port=0, device=0, gpio=noop())
-    device = max7219(serial, cascaded=4 , block_orientation=-90, rotate=2)
+    device = max7219(serial, cascaded=8 , block_orientation=-90, rotate=2)
 
     for i in range(len(disp)):
         show_message(device, disp[i], fill="white", font=proportional(LCD_FONT),scroll_delay = 0.02) #Change the value of 'scroll_delay' to change the Scrolling Speed
