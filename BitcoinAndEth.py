@@ -23,11 +23,13 @@ print("Printing Bitcoin and Ethereum prices")
 
 # starts here
 while(1):
-
+	
+	#Bitcoin
 	bdata = requests.get("https://api.coingecko.com/api/v3/simple/price?ids=bitcoin&vs_currencies=usd")
 	bjson = bdata.json()
 	print("Bitcoin $" + str (bjson['bitcoin']['usd']))
 
+	#Ethereum
 	edata = requests.get("https://api.coingecko.com/api/v3/simple/price?ids=ethereum&vs_currencies=usd")
 	ejson = edata.json()
 	print("Ethereum $" + str (ejson['ethereum']['usd']))
