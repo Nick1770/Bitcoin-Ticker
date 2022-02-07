@@ -55,9 +55,9 @@ while(1):
 	print("NuCypher $" + str (njson['nucypher']['usd']))
 
 	#Safemoon
-	sdata = requests.get("https://api.coingecko.com/api/v3/simple/price?ids=safemoon&vs_currencies=usd")
+	sdata = requests.get("https://api.coingecko.com/api/v3/simple/price?ids=safemoon-2&vs_currencies=usd")
 	sjson = sdata.json()
-	print("SafeMoon $" + str (sjson['safemoon']['usd']))
+	print("SafeMoon $" + str (sjson['safemoon-2']['usd']))
 
 	#WadzPay
 	wdata = requests.get("https://api.coingecko.com/api/v3/simple/price?ids=wadzpay-token&vs_currencies=usd")
@@ -75,4 +75,4 @@ while(1):
 	print("XRP $" + str (xjson['ripple']['usd']))
 
 	# Print message to LED
-	show_message(device, "Bitcoin $" + str (bjson['bitcoin']['usd']) + "          " + "Ethereum $" + str (ejson['ethereum']['usd']) + "          " + "Dogecoin $" + str (djson['dogecoin']['usd']) + "          " + "Uniswap $" + str (ujson['uniswap']['usd']) + "          " + "The Graph $" + str (gjson['the-graph']['usd']) + "          " + "NuCypher $" + str (njson['nucypher']['usd']) + "          " + "SafeMoon $" + str (sjson['safemoon']['usd']) + "          " + "WadzPay $" + str (wjson['wadzpay-token']['usd']) + "          " + "Crypto.com Coin $" + str (cjson['crypto-com-chain']['usd'])+ "          " + "XRP $" + str (xjson['ripple']['usd']), fill="white", font=proportional(LCD_FONT),scroll_delay = 0.04)
+	show_message(device, "Bitcoin $" + str (bjson['bitcoin']['usd']) + "          " + "Ethereum $" + str (ejson['ethereum']['usd']) + "          " + "Dogecoin $" + str (djson['dogecoin']['usd']) + "          " + "Uniswap $" + str (ujson['uniswap']['usd']) + "          " + "The Graph $" + str (gjson['the-graph']['usd']) + "          " + "NuCypher $" + str (njson['nucypher']['usd']) + "          " + "SafeMoon $" + str (sjson['safemoon-2']['usd']) + "          " + "WadzPay $" + str (wjson['wadzpay-token']['usd']) + "          " + "Crypto.com Coin $" + str (cjson['crypto-com-chain']['usd'])+ "          " + "XRP $" + str (xjson['ripple']['usd']), fill="white", font=proportional(LCD_FONT),scroll_delay = 0.04)
