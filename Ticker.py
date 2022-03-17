@@ -2,6 +2,7 @@
 # -*- coding: utf-8 -*-
 # Copyright (c) 2017-18 Richard Hull and contributors
 # See LICENSE.rst for details.
+# Additions by Nick DiSisto
 
 import re
 import time
@@ -63,16 +64,21 @@ while(1):
 	wdata = requests.get("https://api.coingecko.com/api/v3/simple/price?ids=wadzpay-token&vs_currencies=usd")
 	wjson = wdata.json()
 	print("WadzPay $" + str (wjson['wadzpay-token']['usd']))
-	
+
 	#Crypto.com
 	cdata = requests.get("https://api.coingecko.com/api/v3/simple/price?ids=crypto-com-chain&vs_currencies=usd")
 	cjson = cdata.json()
 	print("Crypto.com Coin $" + str (cjson['crypto-com-chain']['usd']))
-	
+
 	#XRP
 	xdata = requests.get("https://api.coingecko.com/api/v3/simple/price?ids=ripple&vs_currencies=usd")
 	xjson = xdata.json()
 	print("XRP $" + str (xjson['ripple']['usd']))
 
+	#SAFUU
+	safdata = requests.get("https://api.coingecko.com/api/v3/simple/price?ids=safuu&vs_currencies=usd")
+	safjson = safdata.json()
+	print("SAFUU $" + str (safjson['safuu']['usd']))
+
 	# Print message to LED
-	show_message(device, "Bitcoin $" + str (bjson['bitcoin']['usd']) + "          " + "Ethereum $" + str (ejson['ethereum']['usd']) + "          " + "Dogecoin $" + str (djson['dogecoin']['usd']) + "          " + "Uniswap $" + str (ujson['uniswap']['usd']) + "          " + "The Graph $" + str (gjson['the-graph']['usd']) + "          " + "NuCypher $" + str (njson['nucypher']['usd']) + "          " + "SafeMoon $" + str (sjson['safemoon-2']['usd']) + "          " + "WadzPay $" + str (wjson['wadzpay-token']['usd']) + "          " + "Crypto.com Coin $" + str (cjson['crypto-com-chain']['usd'])+ "          " + "XRP $" + str (xjson['ripple']['usd']), fill="white", font=proportional(LCD_FONT),scroll_delay = 0.04)
+	show_message(device, "Bitcoin $" + str (bjson['bitcoin']['usd']) + "          " + "Ethereum $" + str (ejson['ethereum']['usd']) + "          " + "Dogecoin $" + str (djson['dogecoin']['usd']) + "          " + "Uniswap $" + str (ujson['uniswap']['usd']) + "          " + "The Graph $" + str (gjson['the-graph']['usd']) + "          " + "NuCypher $" + str (njson['nucypher']['usd']) + "          " + "SafeMoon $" + str (sjson['safemoon-2']['usd']) + "          " + "WadzPay $" + str (wjson['wadzpay-token']['usd']) + "          " + "Crypto.com Coin $" + str (cjson['crypto-com-chain']['usd'])+ "          " + "XRP $" + str (xjson['ripple']['usd']) + "          " + "SAFUU $" + str (safjson['safuu']['usd']), fill="white", font=proportional(LCD_FONT),scroll_delay = 0.04)
