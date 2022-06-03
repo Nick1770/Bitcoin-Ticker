@@ -24,8 +24,8 @@ print("Nick is Awesome!")
 msg ="Nick is Awesome!"
 while(1):
 	print(msg)
+	#Displays msg in all 4 fonts at differnt speeds
 	show_message(device, msg, fill="white", font=proportional(CP437_FONT),scroll_delay = 0.02)
-	#time.sleep(1)
 	show_message(device, msg, fill="white", font=proportional(SINCLAIR_FONT),scroll_delay = 0.03)
 	show_message(device, msg, fill="white", font=proportional(LCD_FONT),scroll_delay = 0.04)
 	show_message(device, msg, fill="white", font=proportional(TINY_FONT),scroll_delay = 0.04)
