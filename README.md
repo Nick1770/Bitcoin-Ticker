@@ -1,8 +1,8 @@
 ## Bitcoin-Ticker
 
-This project is built with a raspberry pi zero w, a few dot matrix displays, and a 3D printed case.
+This project was built with a raspberry pi zero w, a few [[dot matrix displays](https://www.amazon.com/HiLetgo-MAX7219-Arduino-Microcontroller-Display/dp/B07FFV537V/ref=sr_1_10?crid=12JF67LIYCAFN&keywords=dot+matrix+display&qid=1654813940&sprefix=dot+matrix+display%2Caps%2C89&sr=8-10)], and a 3D printed case.
 
-Code modifications and 3D printed case was made by Nick DiSisto.
+Code modifications and 3D printed case was made by [[Nick DiSisto](https://www.linkedin.com/in/nick-disisto-4111291ba/)].
 ### Prerequisites
 
 Here are a few things you will need before installation. You may be asked to type Y or N during installation.
