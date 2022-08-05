@@ -35,7 +35,11 @@ Here are a few things you will need before installation. You may be asked to typ
    ```sh
    sudo python3 -m pip install --upgrade luma.led_matrix
    ```
-4. You'll need to enable SPI on the raspberry pi
+4. You'll need clone this repository
+   ```sh
+   git clone https://github.com/Nick1770/Bitcoin-Ticker.git
+   ```
+5. You'll need to enable SPI on the raspberry pi
    ```sh
    sudo raspi-config
    ```
