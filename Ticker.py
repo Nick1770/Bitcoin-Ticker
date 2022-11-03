@@ -34,6 +34,11 @@ while(1):
 	edata = requests.get("https://api.coingecko.com/api/v3/simple/price?ids=ethereum&vs_currencies=usd")
 	ejson = edata.json()
 	print("Ethereum $" + str (ejson['ethereum']['usd']))
+	
+	#Bnb
+	bnbdata = requests.get("https://api.coingecko.com/api/v3/simple/price?ids=binancecoin&vs_currencies=usd")
+	bnbjson = bnbdata.json()
+	print("BNB $" + str (bnbjson['binancecoin']['usd']))
 
 	#Dogecoin
 	ddata = requests.get("https://api.coingecko.com/api/v3/simple/price?ids=dogecoin&vs_currencies=usd")
@@ -81,4 +86,4 @@ while(1):
 	print("SAFUU $" + str (safjson['safuu']['usd']))
 
 	# Print message to LED
-	show_message(device, "Bitcoin $" + str (bjson['bitcoin']['usd']) + "          " + "Ethereum $" + str (ejson['ethereum']['usd']) + "          " + "Dogecoin $" + str (djson['dogecoin']['usd']) + "          " + "Uniswap $" + str (ujson['uniswap']['usd']) + "          " + "The Graph $" + str (gjson['the-graph']['usd']) + "          " + "NuCypher $" + str (njson['nucypher']['usd']) + "          " + "SafeMoon $" + str (sjson['safemoon-2']['usd']) + "          " + "WadzPay $" + str (wjson['wadzpay-token']['usd']) + "          " + "Crypto.com Coin $" + str (cjson['crypto-com-chain']['usd'])+ "          " + "XRP $" + str (xjson['ripple']['usd']) + "          " + "SAFUU $" + str (safjson['safuu']['usd']), fill="white", font=proportional(LCD_FONT),scroll_delay = 0.04)
+	show_message(device, "Bitcoin $" + str (bjson['bitcoin']['usd']) + "          " + "Ethereum $" + str (ejson['ethereum']['usd']) + "          " + "BNB $" + str (bnbjson['binancecoin']['usd']) + "          " +  "Dogecoin $" + str (djson['dogecoin']['usd']) + "          " + "Uniswap $" + str (ujson['uniswap']['usd']) + "          " + "The Graph $" + str (gjson['the-graph']['usd']) + "          " + "NuCypher $" + str (njson['nucypher']['usd']) + "          " + "SafeMoon $" + str (sjson['safemoon-2']['usd']) + "          " + "WadzPay $" + str (wjson['wadzpay-token']['usd']) + "          " + "Crypto.com Coin $" + str (cjson['crypto-com-chain']['usd'])+ "          " + "XRP $" + str (xjson['ripple']['usd']) + "          " + "SAFUU $" + str (safjson['safuu']['usd']), fill="white", font=proportional(LCD_FONT),scroll_delay = 0.04)
