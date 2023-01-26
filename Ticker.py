@@ -118,7 +118,6 @@ while(1):
 	safjson = safdata.json()
 	print("SAFUU $" + str (safjson['safuu']['usd']))
 
-
 	# Fetch other half of new data
 
 	# Print message to LED
