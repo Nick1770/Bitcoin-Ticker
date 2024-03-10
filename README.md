@@ -67,7 +67,7 @@ Select Interfacing Options, then Select SPI, Finally Select Yes
 4. Enjoy! If you need to end the script press "ctrl" + "c"
 
 ### Run your script on boot
-1. Nano in rc.local
+1. Nano into rc.local
    ```sh
    sudo nano /etc/rc.local
    ```
