@@ -3,6 +3,11 @@
 This project was built with a raspberry pi zero w, a few [[dot matrix displays](https://www.amazon.com/HiLetgo-MAX7219-Arduino-Microcontroller-Display/dp/B07FFV537V/ref=sr_1_10?crid=12JF67LIYCAFN&keywords=dot+matrix+display&qid=1654813940&sprefix=dot+matrix+display%2Caps%2C89&sr=8-10)], and a 3D printed case. Refer to this chart for a [[wiring diagram](https://media.discordapp.net/attachments/741501177560039424/1005160146370039879/Screen_Shot_2022-08-05_at_1.06.35_PM.png)]
 
 Code modifications and 3D printed case was made by [[Nick DiSisto](https://www.linkedin.com/in/nick-disisto-4111291ba/)].
+
+### Raspberry Pi W setup
+First, you will need to flash the microSD card with Raspberry Pi OS Lite. I recommend the Lite version as you will not need a desktop environment. I recommend using the Raspberry Pi Imager as you can enter your WiFi SSID and passkey.
+
+
 ### Prerequisites
 
 Here are a few things you will need before installation. You may be asked to type Y or N during installation.
@@ -60,6 +65,22 @@ Select Interfacing Options, then Select SPI, Finally Select Yes
    python3 Ticker.py
    ```
 4. Enjoy! If you need to end the script press "ctrl" + "c"
+
+### Run your script on boot
+1. Nano in rc.local
+   ```sh
+   sudo nano /etc/rc.local
+   ```
+2. add the following above line above "exit 0"
+   ```sh
+   sudo python3 /home/pi/Bitcoin-Ticker/TickerOnBoot.py &
+   ```
+3. Exit by Pressing "ctrl" and "x" then press "y" and press enter
+   
+4. Reboot the raspberry pi
+   ```sh
+   sudo reboot now
+   ```
    
    
 <p align="right">(<a href="#top">back to top</a>)</p>
