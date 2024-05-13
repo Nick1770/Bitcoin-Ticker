@@ -13,13 +13,13 @@ First, you will need to flash the microSD card with Raspberry Pi OS Lite. I reco
 Here are a few things you will need before installation. You may be asked to type Y or N during installation.
 
   ```sh
-  sudo apt install python3-pip
+  sudo apt install python3-pip -y
   ```
   ```sh
-  sudo apt-get install python3-bs4
+  sudo apt-get install python3-bs4 -y
   ```
   ```sh
-  sudo apt install git
+  sudo apt install git -y
   ```
   
   
@@ -34,11 +34,11 @@ Here are a few things you will need before installation. You may be asked to typ
    ```
 2. Next you'll need this
    ```sh
-   sudo apt install build-essential python3-dev python3-pip libfreetype6-dev libjpeg-dev libopenjp2-7 libtiff5
+   sudo apt install build-essential python3-dev python3-pip libfreetype6-dev libjpeg-dev libopenjp2-7 -y
    ```
 3. Along with...
    ```sh
-   sudo python3 -m pip install --upgrade luma.led_matrix
+   sudo python3 -m pip install --upgrade --break-system-packages luma.led_matrix
    ```
 4. You'll need to clone this repository
    ```sh
