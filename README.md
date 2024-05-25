@@ -1,6 +1,8 @@
 ## Bitcoin-Ticker
 
-This project was built with a raspberry pi zero w, a few [[dot matrix displays](https://www.amazon.com/HiLetgo-MAX7219-Arduino-Microcontroller-Display/dp/B07FFV537V/ref=sr_1_10?crid=12JF67LIYCAFN&keywords=dot+matrix+display&qid=1654813940&sprefix=dot+matrix+display%2Caps%2C89&sr=8-10)], and a 3D printed case. Refer to this chart for a [[wiring diagram](https://media.discordapp.net/attachments/741501177560039424/1005160146370039879/Screen_Shot_2022-08-05_at_1.06.35_PM.png)]
+![alt text](https://raw.githubusercontent.com/Nick1770/Bitcoin-Ticker/main/images/IMG_6206.jpeg "The Crypto Ticker")
+
+This project was built with a raspberry pi zero w, a few [[dot matrix displays](https://www.amazon.com/HiLetgo-MAX7219-Arduino-Microcontroller-Display/dp/B07FFV537V/ref=sr_1_10?crid=12JF67LIYCAFN&keywords=dot+matrix+display&qid=1654813940&sprefix=dot+matrix+display%2Caps%2C89&sr=8-10)], and a 3D printed case. Refer to this chart for a [[wiring diagram](https://raw.githubusercontent.com/Nick1770/Bitcoin-Ticker/main/images/GPIOPinOuts.png)]
 
 Code modifications and 3D printed case was made by [[Nick DiSisto](https://www.linkedin.com/in/nick-disisto-4111291ba/)].
 
