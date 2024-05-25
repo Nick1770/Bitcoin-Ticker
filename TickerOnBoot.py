@@ -35,7 +35,7 @@ def get_ip_address(ifname):
 
 ip_address = get_ip_address('wlan0')
 print(f"Device WLAN0 IP address: {ip_address}")
-show_message(device, f"Device WLAN0 IP address: {ip_address}", fill="white", font=proportional(LCD_FONT),scroll_delay = 0.02)
+show_message(device, f"Device WLAN0 IP address: {ip_address}", fill="white", font=proportional(LCD_FONT),scroll_delay = 0.06)
 print("Printing Bitcoin and Ethereum prices")
 
 while True:
