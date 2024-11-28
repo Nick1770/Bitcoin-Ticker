@@ -41,12 +41,14 @@ print("Printing Bitcoin and Ethereum prices")
 while True:
     try:
         # Fetch coin prices
-        bdata = requests.get("https://api.coingecko.com/api/v3/simple/price?ids=bitcoin%2Cethereum%2Cbinancecoin%2Cripple%2Cdogecoin%2Cuniswap%2Cthe-graph%2Csafemoon-2%2Ccrypto-com-chain%2Csafuu&vs_currencies=usd")
+        bdata = requests.get("https://api.coingecko.com/api/v3/simple/price?ids=bitcoin%2Cethereum%2Csolana%2Csui%2Ctron%2Cthe-open-network%2Cbinancecoin%2Cripple%2Cdogecoin%2Cuniswap%2Cthe-graph%2Csafemoon-2%2Ccrypto-com-chain%2Csafuu&vs_currencies=usd")
         bjson = bdata.json()
 
         # Print coin prices to console
         print("Bitcoin $" + str(bjson['bitcoin']['usd']))
         print("Ethereum $" + str(bjson['ethereum']['usd']))
+        print("Solana $" + str(bjson['solana']['usd']))
+        print("Sui $" + str(bjson['sui']['usd']))
         print("BNB $" + str(bjson['binancecoin']['usd']))
         print("XRP $" + str(bjson['ripple']['usd']))
         print("Dogecoin $" + str(bjson['dogecoin']['usd']))
@@ -59,6 +61,8 @@ while True:
         # Print message to LED
         show_message(device, "Bitcoin $" + str(bjson['bitcoin']['usd']) + "          " + \
                      "Ethereum $" + str(bjson['ethereum']['usd']) + "          " + \
+                     "Solana $" + str(bjson['solana']['usd']) + "          " + \
+                     "Sui $" + str(bjson['sui']['usd']) + "          " + \
                      "BNB $" + str(bjson['binancecoin']['usd']) + "          " + \
                      "XRP $" + str(bjson['ripple']['usd']) + "          " + \
                      "Dogecoin $" + str(bjson['dogecoin']['usd']) + "          " + \
