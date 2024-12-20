@@ -54,7 +54,7 @@ while True:
     if is_within_time_range():
         try:
             # Fetch coin prices
-            bdata = requests.get("https://api.coingecko.com/api/v3/simple/price?ids=bitcoin%2Cethereum%2Csolana%2Csui%2Chedera-hashgraph%2Ctron%2Cthe-open-network%2Cbinancecoin%2Cripple%2Cdogecoin%2Cuniswap%2Cthe-graph%2Csafemoon-2%2Ccrypto-com-chain%2Csafuu&vs_currencies=usd")
+            bdata = requests.get("https://api.coingecko.com/api/v3/simple/price?ids=bitcoin%2Cethereum%2Csolana%2Csui%2Chedera-hashgraph%2Ctron%2Cthe-open-network%2Cbinancecoin%2Cripple%2Cdogecoin%2Cuniswap%2Cthe-graph%2Csafemoon-2%2Ccrypto-com-chain%2Ctrust-wallet-token%2Csafuu&vs_currencies=usd")
             bjson = bdata.json()
 
             # Print coin prices to console
@@ -67,6 +67,7 @@ while True:
             print("XRP $" + str(bjson['ripple']['usd']))
             print("Dogecoin $" + str(bjson['dogecoin']['usd']))
             print("Uniswap $" + str(bjson['uniswap']['usd']))
+            print("TWT $" + str(bjson['trust-wallet-token']['usd']))
             print("Tron $" + str(bjson['tron']['usd']))
             print("Ton $" + str(bjson['the-open-network']['usd']))
             print("Cronos $" + str(bjson['crypto-com-chain']['usd']))
@@ -84,6 +85,7 @@ while True:
                         "XRP $" + str(bjson['ripple']['usd']) + "          " + \
                         "Dogecoin $" + str(bjson['dogecoin']['usd']) + "          " + \
                         "Uniswap $" + str(bjson['uniswap']['usd']) + "          " + \
+                        "TWT $" + str(bjson['trust-wallet-token']['usd']) + "          " + \
                         "Tron $" + str(bjson['tron']['usd']) + "          " + \
                         "Ton $" + str(bjson['the-open-network']['usd']) + "          " + \
                         "Cronos $" + str(bjson['crypto-com-chain']['usd']) + "          " + \
