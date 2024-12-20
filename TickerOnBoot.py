@@ -54,7 +54,7 @@ while True:
     if is_within_time_range():
         try:
             # Fetch coin prices
-            bdata = requests.get("https://api.coingecko.com/api/v3/simple/price?ids=bitcoin%2Cethereum%2Csolana%2Csui%2Chedera-hashgraph%2Ctron%2Cthe-open-network%2Cbinancecoin%2Cripple%2Cdogecoin%2Cuniswap%2Cthe-graph%2Csafemoon-2%2Ccrypto-com-chain%2Ctrust-wallet-token%2Csafuu&vs_currencies=usd")
+            bdata = requests.get("https://api.coingecko.com/api/v3/simple/price?ids=bitcoin%2Cethereum%2Csolana%2Csui%2Chedera-hashgraph%2Ctron%2Cthe-open-network%2Cbinancecoin%2Cripple%2Cdogecoin%2Cuniswap%2Cthe-graph%2Csafemoon-2%2Ccrypto-com-chain%2Ctrust-wallet-token%2Cmister-miggles%2Csafuu&vs_currencies=usd")
             bjson = bdata.json()
 
             # Print coin prices to console
@@ -72,6 +72,7 @@ while True:
             print("Ton $" + str(bjson['the-open-network']['usd']))
             print("Cronos $" + str(bjson['crypto-com-chain']['usd']))
             print("The Graph $" + str(bjson['the-graph']['usd']))
+            print("Miggles $" + str(bjson['mister-miggles']['usd']))
             print("SafeMoon $" + str(bjson['safemoon-2']['usd']))
             print("SAFUU $" + str(bjson['safuu']['usd']))
 
@@ -90,6 +91,7 @@ while True:
                         "Ton $" + str(bjson['the-open-network']['usd']) + "          " + \
                         "Cronos $" + str(bjson['crypto-com-chain']['usd']) + "          " + \
                         "The Graph $" + str(bjson['the-graph']['usd']) + "          " + \
+                        "Miggles $" + str(bjson['mister-miggles']['usd']) + "          " + \
                         "SafeMoon $" + str(bjson['safemoon-2']['usd']) + "          " + \
                         "SAFUU $" + str(bjson['safuu']['usd']) + "          ", \
                         fill="white", font=proportional(LCD_FONT), scroll_delay=0.04)
